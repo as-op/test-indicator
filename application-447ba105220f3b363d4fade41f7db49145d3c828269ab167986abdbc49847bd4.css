@@ -3348,7 +3348,8 @@ img.logo {
 /* line 46, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial {
   display: inline-block;
-  max-width: 700px;
+  max-width: 100%;
+  width: 700px;
   text-align: left;
   font-size: 14px;
   line-height: 20px;
@@ -3356,17 +3357,17 @@ img.logo {
   position: relative;
   padding: 10px;
 }
-/* line 56, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 57, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form {
   background-color: #fff;
   filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-/* line 61, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 62, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial a {
   color: #1A67A3;
 }
-/* line 64, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 65, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -3377,24 +3378,24 @@ img.logo {
   background-position-y: 7px;
   padding-right: 18px;
 }
-/* line 75, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 76, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .spot-text-field-group {
   padding: 0;
   display: flex;
 }
-/* line 79, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 80, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .spot-text-field-group:focus-within {
   color: black;
   outline: 2px solid #00a3ff;
   outline-offset: -2px;
 }
-/* line 84, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 85, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .spot-text-field-group .spot-text-field {
   flex: 1;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-/* line 89, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 90, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .spot-text-field-group .spot-text-field-button {
   font-weight: 400;
   font-size: 14px;
@@ -3406,28 +3407,28 @@ img.logo {
   border-bottom-right-radius: 4px;
   padding: 0.5rem;
 }
-/* line 100, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 101, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .spot-text-field-group.invalid {
   outline: #D01100 solid 1px;
 }
-/* line 103, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 104, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .spot-form-field--description-error {
   color: #D01100;
   font-style: normal;
 }
-/* line 107, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 108, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .spot-form-field--description {
   margin-top: 4px;
 }
-/* line 111, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 112, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .spot-text-field--input {
   color: #000;
 }
-/* line 115, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 116, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .spot-text-field.invalid {
   outline: #D01100 solid 1px;
 }
-/* line 119, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 120, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form-trial_head h1 {
   font-size: 20px;
   font-weight: 700;
@@ -3436,11 +3437,11 @@ img.logo {
   line-height: 28px;
   margin-bottom: 22px;
 }
-/* line 127, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 128, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form-trial_head p {
   margin-bottom: 0;
 }
-/* line 131, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 132, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form-trial_footer {
   display: flex;
   background-color: #F3F3F3;
@@ -3449,31 +3450,32 @@ img.logo {
   align-items: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  min-height: 56px;
 }
-/* line 140, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 142, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form-trial_footer > div {
   flex: 1;
 }
 @media (max-width: 679px) {
-  /* line 144, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+  /* line 146, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
   .form-trial .form-trial_footer {
     flex-direction: column;
     padding: 16px 24px;
   }
-  /* line 148, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+  /* line 150, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
   .form-trial .form-trial_footer > div {
     margin-bottom: 14px;
   }
 }
-/* line 151, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 153, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form-trial_body, .form-trial .form-trial_head {
   padding: 24px 24px 0;
 }
-/* line 154, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 156, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form-trial-confirm {
   text-align: center;
 }
-/* line 157, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 159, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form-trial-confirm h1 {
   font-size: 20px;
   font-weight: 700;
@@ -3482,22 +3484,22 @@ img.logo {
   margin-top: 20px;
   margin-bottom: 18px;
 }
-/* line 165, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 167, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form-trial-confirm p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0;
 }
-/* line 171, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 173, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .form-trial-confirm p + p {
   margin-bottom: 40px;
 }
-/* line 174, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 176, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial #instance_name_error, .form-trial #trial_email_error, .form-trial #generic_error {
   display: none;
 }
-/* line 177, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 179, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .loader {
   color: #ffffff;
   font-size: 10px;
@@ -3508,7 +3510,7 @@ img.logo {
   display: none;
   top: -2px;
 }
-/* line 187, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 189, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .loader, .form-trial .loader:before, .form-trial .loader:after {
   border-radius: 50%;
   width: 1em;
@@ -3516,23 +3518,23 @@ img.logo {
   animation-fill-mode: both;
   animation: load7 1.8s infinite ease-in-out;
 }
-/* line 194, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 196, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .loader:before, .form-trial .loader:after {
   content: "";
   position: absolute;
   top: 0;
 }
-/* line 199, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 201, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .loader:before {
   left: -1.5em;
   animation-delay: -0.32s;
 }
-/* line 203, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 205, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .loader:after {
   animation-delay: 0.32s;
   left: 1.5em;
 }
-/* line 207, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 209, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .button_resend {
   min-width: 120px;
   min-height: 46px;
@@ -3541,7 +3543,7 @@ img.logo {
   border-style: solid;
   border-width: 1px;
 }
-/* line 215, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 217, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .button_submit {
   min-width: 120px;
   min-height: 46px;
@@ -3553,33 +3555,40 @@ img.logo {
   color: var(--button--highlight-font-color);
   border-color: var(--button--highlight-background-color);
 }
-/* line 226, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 228, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .button_submit:hover {
   color: var(--button--highlight-font-color);
   border-color: var(--button--highlight-background-hover-color);
   background: var(--button--highlight-background-hover-color);
 }
-/* line 231, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 233, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .button_submit.working {
   position: relative;
 }
-/* line 234, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 236, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .button_submit.working .text {
   display: none;
 }
-/* line 237, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 239, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .form-trial .button_submit.working .loader {
   display: inline-block;
 }
 
-/* line 241, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 242, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .loading-indicator--background {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
-/* line 245, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+/* line 246, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
+.loading-indicator--background img {
+  height: 70px;
+  width: auto;
+  margin-top: 39px;
+  margin-bottom: 39px;
+}
+/* line 252, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .loading-indicator--background h1 {
-  margin-top: 30px;
+  margin-top: 16px;
   font-weight: 700;
   font-size: 20px;
 }
