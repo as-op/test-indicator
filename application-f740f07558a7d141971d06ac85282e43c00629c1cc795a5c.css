@@ -3573,12 +3573,13 @@ img.logo {
 }
 
 /* line 241, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
-.loading-indicator--background img {
-  margin-top: 100px;
-  margin-bottom: 100px;
+.loading-indicator--background {
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 /* line 245, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
 .loading-indicator--background h1 {
+  margin-top: 30px;
   font-weight: 700;
   font-size: 20px;
 }
