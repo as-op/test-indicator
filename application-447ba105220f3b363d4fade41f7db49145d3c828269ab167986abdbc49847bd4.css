@@ -3580,9 +3580,7 @@ img.logo {
   margin-bottom: 32px;
 }
 /* line 246, /Volumes/Projects/op/augur/app/assets/stylesheets/trial.sass */
-.loading-indicator--background img {
-  height: 70px;
-  width: auto;
+.loading-indicator--background img, .loading-indicator--background svg {
   margin-top: 39px;
   margin-bottom: 39px;
 }
@@ -3592,6 +3590,90 @@ img.logo {
   font-weight: 700;
   font-size: 20px;
 }
+
+@keyframes svg_ani-1 {
+  0% {
+    x: 150px;
+    width: 0;
+  }
+  36% {
+    x: 0;
+    width: 150px;
+  }
+  72% {
+    x: 0;
+    width: 0;
+  }
+  100% {
+    x: 0;
+    width: 0;
+  }
+}
+
+@keyframes svg_ani-2 {
+  0% {
+    x: 150px;
+  }
+  36% {
+    x: 0;
+  }
+  72% {
+    x: -100px;
+  }
+  100% {
+    x: -100px;
+  }
+}
+
+.op-progress-indicator {
+  width: 150px;
+  height: 70px;
+  view-box: 0 0 150 70;
+}
+
+.op-progress-indicator rect {
+  rx: 4px;
+  x: 152px;
+  height: 10px;
+  width: 150px;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: svg_ani-1;
+}
+
+.op-progress-indicator rect:nth-of-type(1) {
+  fill: #f89a43;
+  x: 140px;
+  y: 6px;
+}
+
+.op-progress-indicator rect:nth-of-type(2) {
+  fill: #f89a43;
+  y: 26px;
+  animation-delay: 660ms;
+}
+
+.op-progress-indicator rect:nth-of-type(3) {
+  fill: #346495;
+  y: 46px;
+  animation-name: svg_ani-1;
+  animation-delay: 1330ms;
+}
+
+.op-progress-indicator rect:nth-of-type(4) {
+  fill: #36c434;
+  y: 44px;
+  rx: 2px;
+  width: 14px;
+  height: 14px;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: rotate(45deg);
+  animation-name: svg_ani-2;
+  animation-delay: 2130ms;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
